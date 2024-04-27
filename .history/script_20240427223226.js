@@ -7,9 +7,6 @@ function beforeSubmit(event){
     let formattedDate = new Date(datePicker.value).toLocaleDateString("en-GB", { day: '2-digit', month: '2-digit', year: 'numeric' });
 
 
-    }else{
-        alert('Please checked the reCAPTCHA box!');
-        event.event.preventDefault();
     }
    
 

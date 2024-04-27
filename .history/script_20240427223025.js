@@ -1,17 +1,9 @@
-let captchaChecked= false;
-function beforeSubmit(event){
-    if(captchaChecked){
-        let datePicker = document.getElementById('date-of-birth');
+function beforeSubmit(){
+    let datePicker = document.getElementById('date-of-birth');
     let hiddenDate= document.getElementById('Date_of_Birth__c');
 
     let formattedDate = new Date(datePicker.value).toLocaleDateString("en-GB", { day: '2-digit', month: '2-digit', year: 'numeric' });
 
-
-    }else{
-        alert('Please checked the reCAPTCHA box!');
-        event.event.preventDefault();
-    }
-   
 
 
     //let formattedDate = new Date(datePicker.value).toLocaleDateString("en-US", { month: '2-digit', day: '2-digit', year: 'numeric' });
@@ -40,6 +32,6 @@ function timestamp() {
     } setInterval(timestamp, 500); 
 
     function captchaSuccess(){
-
+        
     }
 

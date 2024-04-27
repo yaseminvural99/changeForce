@@ -8,8 +8,7 @@ function beforeSubmit(event){
 
 
     }else{
-        alert('Please checked the reCAPTCHA box!');
-        event.event.preventDefault();
+        alert('Please checked the reCAPTCHA');
     }
    
 
